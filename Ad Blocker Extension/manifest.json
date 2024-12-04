@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Blocker",
+    "description": "Block annoying ads and trackers effectively.",
+    "version": "1.0.0",
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon.png",
+            "48": "icons/icon.png",
+            "128": "icons/icon.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
